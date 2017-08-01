@@ -1,92 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <title>List</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css">
-</head>
-<body>
-<div class="container-fluid">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <hr>
-        <div id="search" class="text-center">
-            <input type="text" class="filter-n" placeholder="Digite o nome">
-            <input type="text" class="filter-c" placeholder="Digite a Cidade">
-            <input type="text" class="filter-f" placeholder="Digite o Telefone">
+        <meta charset="UTF-8">
+        <title>Word Counter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <style>
+            .pull-right {
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <h1>Word Counter</h1>
+                            <p>Use this tool to counter words and characters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group">
+                            <span>0 Word 0 Character</span>
+                            <textarea class="form-control" id="exampleTextarea" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <td><strong>Details</strong></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Words <span class="pull-right badge badge-info">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Characters <span class="pull-right badge badge-info">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Characters (no spaces)<span class="pull-right badge badge-info">0</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <hr>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <td><strong>Nome</strong></td>
-                    <td><strong>Cidade</strong></td>
-                    <td><strong>Telefone</strong></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="name">André Scalco</td>
-                    <td class="city">Curitiba</td>
-                    <td class="fone">32569841</td>
-                </tr>
-                <tr>
-                    <td class="name">Felipe Vieira</td>
-                    <td class="city">São Paulo</td>
-                    <td class="fone">30459730</td>
-                </tr>
-                <tr>
-                    <td class="name">Isaac Amaral</td>
-                    <td class="city">Salvador</td>
-                    <td class="fone">33695201</td>
-                </tr>
-                <tr>
-                    <td class="name">Leandro Borges</td>
-                    <td class="city">Rio de Janeiro</td>
-                    <td class="fone">30205699</td>
-                </tr>
-                <tr>
-                    <td class="name">Ronaldo Silva</td>
-                    <td class="city">Curitiba</td>
-                    <td class="fone">36520147</td>
-                </tr>
-                <tr>
-                    <td class="name">Felipe Vieira</td>
-                    <td class="city">São Paulo</td>
-                    <td class="fone">30256987</td>
-                </tr>
-                <tr>
-                    <td class="name">Robson Sasdelli</td>
-                    <td class="city">Salvador</td>
-                    <td class="fone">85630147</td>
-                </tr>
-                <tr>
-                    <td class="name">Rogério Alberto Junior</td>
-                    <td class="city">Rio de Janeiro</td>
-                    <td class="fone">99652301</td>
-                </tr>
-                <tr>
-                    <td class="name">Joaquim Zanello</td>
-                    <td class="city">Curitiba</td>
-                    <td class="fone">88746923</td>
-                </tr>
-                <tr>
-                    <td class="name">Felipe Vieira</td>
-                    <td class="city">São Paulo</td>
-                    <td class="fone">30692020</td>
-                </tr>
-                <tr>
-                    <td class="name">Dionísio Campos</td>
-                    <td class="city">Salvador</td>
-                    <td class="fone">30698787</td>
-                </tr>
-                <tr>
-                    <td class="name">Cristiano Dutra</td>
-                    <td class="city">Rio de Janeiro</td>
-                    <td class="fone">33333333</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-</body>
+    </body>
 </html>
